@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,900;1,300;1,400;1,700&display=swap');
+@import 'MediaQuery.css';
+
+#title{
+    color: blueviolet;
+
+}
+.hero{
+    width: 100vw;
+    height: 90vh;
+    background-image: url(../img/plantilla6.jpg);
+    max-width: 100%;
+}
+
+.menu-bar{
+    display: none;
+}
+
+.navbar{
+    grid-template-columns: repeat(20,  1fr);
+    padding: 30px;
+}
+
+.menu li{
+    list-style: none;/*quita viñetas*/
+    float: left;
+    background-color: deeppink;
+    border: 2px solid black;
+    
+}
+
+.menu li a{
+    text-decoration: none; /*Desaparace linea por debajo*/
+    margin-right: 3em;/*Separación de los menus*/
+    font-size: 1.8em;/*Incrementa el tamaño de la letra*/
+    color: black;/*Color de la letra*/
+    font-weight: 200;/*Resalta el texto*/
+    padding: 10px 20px;
+}
+
+.menu li a:hover{
+    /*Cuando coloquemos el puntero encima cambia el color*/
+    background-color: orange;
+    transition: all.10s;/*Colocamos transición de 10 segundos*/
+    color: #000;/*Color de letra*/
+}
+
+.brand{
+    color: red;
+}
+
+.content-info{
+    border: 3px solid violet;
+}

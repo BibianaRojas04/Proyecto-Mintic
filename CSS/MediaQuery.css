@@ -1,0 +1,42 @@
+@media only screen and(max-width:600px){/*cuando nos encontramos en un dispositivo por debajo de 600px*/
+
+    .navbar{
+        background-color: orange;
+        height: 80px;
+        box-shadow: 2px 2px 15px 0px rgb(216, 17, 17);
+        align-items: center;
+
+    }
+
+    .navbar menu{
+        display: flex;
+        flex-direction: column;
+        position:absolute;
+        top: 60px;
+        background-color: yellowgreen;
+        height: 50vh;
+        left: -1em;
+        transform: translateY(-120%);
+        transition: all 1.4s;
+
+    }
+
+    .navbar .menu-toggle{
+        transform: translateY(0%);
+
+    }
+
+    .menu li{
+        margin-top: 3em;
+    }
+
+    .navbar .menu-bar{
+        display: block;
+        font-size: 2em;
+        color:black;
+        cursor: pointer;
+        
+    }
+
+
+}
