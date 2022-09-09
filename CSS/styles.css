@@ -52,3 +52,14 @@
 .content-info{
     border: 3px solid violet;
 }
+.seccion{
+    width: 500px;
+    border: 3px dashed black;
+    font-size:medium;
+
+    background-color: rgb(214, 228, 233);
+    float: left;
+    padding: 1px;
+    margin: 2px;
+}
+
