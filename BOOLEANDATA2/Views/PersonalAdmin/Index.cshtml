@@ -1,0 +1,61 @@
+﻿@model IEnumerable<BOOLEANDATA2.Models.PersonalAdmin>
+<link href="~/css/stylesheet.css" rel="stylesheet" />
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>PERSONAL ADMINISTRATIVO</h1>
+
+<button class="btn_crear">
+    <a asp-action="Create">Create New</a>
+</button>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Dni)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Clave)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Usuario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dni)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Clave)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Usuario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                    <button class="btn_editar"> <a  asp-action="Edit" asp-route-id="@item.IdPerAdm">Edit</a></button> | |
+                    <button class="btn_detalle"><a  asp-action="Details" asp-route-id="@item.IdPerAdm">Details</a></button> |
+                    <button class="btn_borrar"> <a  asp-action="Delete" asp-route-id="@item.IdPerAdm">Delete</a></button>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

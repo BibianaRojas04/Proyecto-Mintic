@@ -1,0 +1,66 @@
+﻿@model IEnumerable<BOOLEANDATA2.Models.RegistroMatricula>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/css/stylesheet.css" rel="stylesheet" />
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaMatricula)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValorMatricula)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Curso)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdAcudiente1Navigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdEstudiante1Navigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdPersonaAdmi1Navigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaMatricula)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValorMatricula)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Curso)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdAcudiente1Navigation.IdAcudiente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdEstudiante1Navigation.IdEstudiante)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdPersonaAdmi1Navigation.IdPerAdm)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdMatricula">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdMatricula">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdMatricula">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

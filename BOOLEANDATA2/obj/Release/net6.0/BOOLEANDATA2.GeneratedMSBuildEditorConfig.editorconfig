@@ -1,0 +1,128 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BOOLEANDATA2
+build_property.RootNamespace = BOOLEANDATA2
+build_property.ProjectDir = C:\Users\Usuario Autorizado\Desktop\BOOLEANDATA2\BOOLEANDATA2\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Usuario Autorizado\Desktop\BOOLEANDATA2\BOOLEANDATA2
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Usuario Autorizado/Desktop/BOOLEANDATA2/BOOLEANDATA2/Views/Acceso/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario Autorizado/Desktop/BOOLEANDATA2/BOOLEANDATA2/Views/Acudientes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN1ZGllbnRlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario Autorizado/Desktop/BOOLEANDATA2/BOOLEANDATA2/Views/Acudientes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN1ZGllbnRlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario Autorizado/Desktop/BOOLEANDATA2/BOOLEANDATA2/Views/Acudientes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN1ZGllbnRlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario Autorizado/Desktop/BOOLEANDATA2/BOOLEANDATA2/Views/Acudientes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN1ZGllbnRlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario Autorizado/Desktop/BOOLEANDATA2/BOOLEANDATA2/Views/Acudientes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN1ZGllbnRlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario Autorizado/Desktop/BOOLEANDATA2/BOOLEANDATA2/Views/Estudiante/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpYW50ZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario Autorizado/Desktop/BOOLEANDATA2/BOOLEANDATA2/Views/Estudiante/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpYW50ZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario Autorizado/Desktop/BOOLEANDATA2/BOOLEANDATA2/Views/Estudiante/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpYW50ZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario Autorizado/Desktop/BOOLEANDATA2/BOOLEANDATA2/Views/Estudiante/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpYW50ZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario Autorizado/Desktop/BOOLEANDATA2/BOOLEANDATA2/Views/Estudiante/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpYW50ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario Autorizado/Desktop/BOOLEANDATA2/BOOLEANDATA2/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario Autorizado/Desktop/BOOLEANDATA2/BOOLEANDATA2/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario Autorizado/Desktop/BOOLEANDATA2/BOOLEANDATA2/Views/PersonalAdmin/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYWxBZG1pblxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario Autorizado/Desktop/BOOLEANDATA2/BOOLEANDATA2/Views/PersonalAdmin/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYWxBZG1pblxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario Autorizado/Desktop/BOOLEANDATA2/BOOLEANDATA2/Views/PersonalAdmin/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYWxBZG1pblxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario Autorizado/Desktop/BOOLEANDATA2/BOOLEANDATA2/Views/PersonalAdmin/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYWxBZG1pblxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario Autorizado/Desktop/BOOLEANDATA2/BOOLEANDATA2/Views/PersonalAdmin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYWxBZG1pblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario Autorizado/Desktop/BOOLEANDATA2/BOOLEANDATA2/Views/RegistroMatricula/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9NYXRyaWN1bGFcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario Autorizado/Desktop/BOOLEANDATA2/BOOLEANDATA2/Views/RegistroMatricula/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9NYXRyaWN1bGFcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario Autorizado/Desktop/BOOLEANDATA2/BOOLEANDATA2/Views/RegistroMatricula/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9NYXRyaWN1bGFcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario Autorizado/Desktop/BOOLEANDATA2/BOOLEANDATA2/Views/RegistroMatricula/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9NYXRyaWN1bGFcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario Autorizado/Desktop/BOOLEANDATA2/BOOLEANDATA2/Views/RegistroMatricula/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9NYXRyaWN1bGFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario Autorizado/Desktop/BOOLEANDATA2/BOOLEANDATA2/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario Autorizado/Desktop/BOOLEANDATA2/BOOLEANDATA2/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario Autorizado/Desktop/BOOLEANDATA2/BOOLEANDATA2/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario Autorizado/Desktop/BOOLEANDATA2/BOOLEANDATA2/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario Autorizado/Desktop/BOOLEANDATA2/BOOLEANDATA2/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-4tavyw2elu
