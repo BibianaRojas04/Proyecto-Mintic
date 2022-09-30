@@ -1,0 +1,215 @@
+USE [master]
+GO
+/****** Object:  Database [BOOLEANDATA]    Script Date: 29/09/2022 19:09:07 ******/
+CREATE DATABASE [BOOLEANDATA]
+ CONTAINMENT = NONE
+ ON  PRIMARY 
+( NAME = N'BOOLEANDATA', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS\MSSQL\DATA\BOOLEANDATA.mdf' , SIZE = 8192KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
+ LOG ON 
+( NAME = N'BOOLEANDATA_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS\MSSQL\DATA\BOOLEANDATA_log.ldf' , SIZE = 8192KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
+ WITH CATALOG_COLLATION = DATABASE_DEFAULT
+GO
+ALTER DATABASE [BOOLEANDATA] SET COMPATIBILITY_LEVEL = 150
+GO
+IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
+begin
+EXEC [BOOLEANDATA].[dbo].[sp_fulltext_database] @action = 'enable'
+end
+GO
+ALTER DATABASE [BOOLEANDATA] SET ANSI_NULL_DEFAULT OFF 
+GO
+ALTER DATABASE [BOOLEANDATA] SET ANSI_NULLS OFF 
+GO
+ALTER DATABASE [BOOLEANDATA] SET ANSI_PADDING OFF 
+GO
+ALTER DATABASE [BOOLEANDATA] SET ANSI_WARNINGS OFF 
+GO
+ALTER DATABASE [BOOLEANDATA] SET ARITHABORT OFF 
+GO
+ALTER DATABASE [BOOLEANDATA] SET AUTO_CLOSE ON 
+GO
+ALTER DATABASE [BOOLEANDATA] SET AUTO_SHRINK OFF 
+GO
+ALTER DATABASE [BOOLEANDATA] SET AUTO_UPDATE_STATISTICS ON 
+GO
+ALTER DATABASE [BOOLEANDATA] SET CURSOR_CLOSE_ON_COMMIT OFF 
+GO
+ALTER DATABASE [BOOLEANDATA] SET CURSOR_DEFAULT  GLOBAL 
+GO
+ALTER DATABASE [BOOLEANDATA] SET CONCAT_NULL_YIELDS_NULL OFF 
+GO
+ALTER DATABASE [BOOLEANDATA] SET NUMERIC_ROUNDABORT OFF 
+GO
+ALTER DATABASE [BOOLEANDATA] SET QUOTED_IDENTIFIER OFF 
+GO
+ALTER DATABASE [BOOLEANDATA] SET RECURSIVE_TRIGGERS OFF 
+GO
+ALTER DATABASE [BOOLEANDATA] SET  ENABLE_BROKER 
+GO
+ALTER DATABASE [BOOLEANDATA] SET AUTO_UPDATE_STATISTICS_ASYNC OFF 
+GO
+ALTER DATABASE [BOOLEANDATA] SET DATE_CORRELATION_OPTIMIZATION OFF 
+GO
+ALTER DATABASE [BOOLEANDATA] SET TRUSTWORTHY OFF 
+GO
+ALTER DATABASE [BOOLEANDATA] SET ALLOW_SNAPSHOT_ISOLATION OFF 
+GO
+ALTER DATABASE [BOOLEANDATA] SET PARAMETERIZATION SIMPLE 
+GO
+ALTER DATABASE [BOOLEANDATA] SET READ_COMMITTED_SNAPSHOT OFF 
+GO
+ALTER DATABASE [BOOLEANDATA] SET HONOR_BROKER_PRIORITY OFF 
+GO
+ALTER DATABASE [BOOLEANDATA] SET RECOVERY SIMPLE 
+GO
+ALTER DATABASE [BOOLEANDATA] SET  MULTI_USER 
+GO
+ALTER DATABASE [BOOLEANDATA] SET PAGE_VERIFY CHECKSUM  
+GO
+ALTER DATABASE [BOOLEANDATA] SET DB_CHAINING OFF 
+GO
+ALTER DATABASE [BOOLEANDATA] SET FILESTREAM( NON_TRANSACTED_ACCESS = OFF ) 
+GO
+ALTER DATABASE [BOOLEANDATA] SET TARGET_RECOVERY_TIME = 60 SECONDS 
+GO
+ALTER DATABASE [BOOLEANDATA] SET DELAYED_DURABILITY = DISABLED 
+GO
+ALTER DATABASE [BOOLEANDATA] SET ACCELERATED_DATABASE_RECOVERY = OFF  
+GO
+ALTER DATABASE [BOOLEANDATA] SET QUERY_STORE = OFF
+GO
+USE [BOOLEANDATA]
+GO
+/****** Object:  Table [dbo].[Acudiente]    Script Date: 29/09/2022 19:09:07 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Acudiente](
+	[Id_Acudiente] [int] IDENTITY(1,1) NOT NULL,
+	[Dni] [varchar](100) NULL,
+	[Tipo_Documento] [varchar](100) NULL,
+	[Nombres] [varchar](100) NULL,
+	[Apellidos] [varchar](100) NULL,
+	[Fecha_nacimiento] [date] NULL,
+	[Parentesco] [varchar](100) NULL,
+	[Ocupacion] [varchar](100) NULL,
+	[Clave] [varchar](100) NULL,
+	[usuario] [varchar](100) NULL,
+	[rol] [varchar](100) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Id_Acudiente] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Estudiante]    Script Date: 29/09/2022 19:09:07 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Estudiante](
+	[Id_Estudiante] [int] IDENTITY(1,1) NOT NULL,
+	[Dni] [varchar](100) NULL,
+	[Tipo_documento] [varchar](100) NULL,
+	[Nombres] [varchar](100) NULL,
+	[Apellidos] [varchar](100) NULL,
+	[Fecha_nacimiento] [date] NULL,
+	[Curso] [varchar](100) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Id_Estudiante] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Personal_admin]    Script Date: 29/09/2022 19:09:07 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Personal_admin](
+	[Id_per_adm] [int] IDENTITY(1,1) NOT NULL,
+	[Dni] [varchar](100) NULL,
+	[Rol] [varchar](100) NULL,
+	[Clave] [varchar](100) NULL,
+	[usuario] [varchar](100) NULL,
+	[Nombre] [varchar](100) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Id_per_adm] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Registro_Matricula]    Script Date: 29/09/2022 19:09:07 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Registro_Matricula](
+	[Id_Matricula] [int] IDENTITY(1,1) NOT NULL,
+	[Fecha_Matricula] [date] NULL,
+	[Valor_Matricula] [float] NULL,
+	[Id_Estudiante_1] [int] NOT NULL,
+	[Id_Acudiente_1] [int] NOT NULL,
+	[Id_Persona_Admi_1] [int] NOT NULL,
+	[Curso] [varchar](50) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Id_Matricula] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET IDENTITY_INSERT [dbo].[Acudiente] ON 
+
+INSERT [dbo].[Acudiente] ([Id_Acudiente], [Dni], [Tipo_Documento], [Nombres], [Apellidos], [Fecha_nacimiento], [Parentesco], [Ocupacion], [Clave], [usuario], [rol]) VALUES (1, N'41321', N'Cedula', N'Erik', N'Quintero', CAST(N'1990-09-14' AS Date), N'Papá', N'Profesor', N'123', N'erikBOOL', N'Acudiente')
+INSERT [dbo].[Acudiente] ([Id_Acudiente], [Dni], [Tipo_Documento], [Nombres], [Apellidos], [Fecha_nacimiento], [Parentesco], [Ocupacion], [Clave], [usuario], [rol]) VALUES (2, N'78987', N'Cedula', N'Cristina', N'Marquez', CAST(N'2022-09-24' AS Date), N'Mama', N'Profesora', N'123', N'cristinaBOOLEANDATA', N'Acudiente')
+SET IDENTITY_INSERT [dbo].[Acudiente] OFF
+GO
+SET IDENTITY_INSERT [dbo].[Estudiante] ON 
+
+INSERT [dbo].[Estudiante] ([Id_Estudiante], [Dni], [Tipo_documento], [Nombres], [Apellidos], [Fecha_nacimiento], [Curso]) VALUES (1, N'0001', N'Registro Civil', N'Jhon', N'Smith', CAST(N'2019-03-28' AS Date), N'Transición')
+SET IDENTITY_INSERT [dbo].[Estudiante] OFF
+GO
+SET IDENTITY_INSERT [dbo].[Personal_admin] ON 
+
+INSERT [dbo].[Personal_admin] ([Id_per_adm], [Dni], [Rol], [Clave], [usuario], [Nombre]) VALUES (1, N'0001', N'Administrativo', N'123', N'gelicBOOL', N'GELI')
+SET IDENTITY_INSERT [dbo].[Personal_admin] OFF
+GO
+ALTER TABLE [dbo].[Registro_Matricula]  WITH CHECK ADD  CONSTRAINT [fk_Acudiente_RegistroMatricula] FOREIGN KEY([Id_Acudiente_1])
+REFERENCES [dbo].[Acudiente] ([Id_Acudiente])
+GO
+ALTER TABLE [dbo].[Registro_Matricula] CHECK CONSTRAINT [fk_Acudiente_RegistroMatricula]
+GO
+ALTER TABLE [dbo].[Registro_Matricula]  WITH CHECK ADD  CONSTRAINT [fk_Admin_RegistroMatricula] FOREIGN KEY([Id_Persona_Admi_1])
+REFERENCES [dbo].[Personal_admin] ([Id_per_adm])
+GO
+ALTER TABLE [dbo].[Registro_Matricula] CHECK CONSTRAINT [fk_Admin_RegistroMatricula]
+GO
+ALTER TABLE [dbo].[Registro_Matricula]  WITH CHECK ADD  CONSTRAINT [fk_Estudiantes_RegistroMatricula] FOREIGN KEY([Id_Estudiante_1])
+REFERENCES [dbo].[Estudiante] ([Id_Estudiante])
+GO
+ALTER TABLE [dbo].[Registro_Matricula] CHECK CONSTRAINT [fk_Estudiantes_RegistroMatricula]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_ValidarUsuario]    Script Date: 29/09/2022 19:09:08 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+create proc [dbo].[sp_ValidarUsuario](
+	@Usuario varchar(100),
+	@Clave varchar(100)
+	)
+as
+begin
+	if(exists(select * from Acudiente where usuario=@Usuario and Clave=@Clave))
+		select Id_Acudiente from Acudiente where  usuario=@Usuario and CLave=@Clave
+	else if (exists(select * from Personal_admin where usuario=@Usuario and Clave=@Clave ))
+		select Id_per_adm from Personal_admin where usuario=@Usuario and Clave=@Clave 
+	else 
+		select '0'
+end
+GO
+USE [master]
+GO
+ALTER DATABASE [BOOLEANDATA] SET  READ_WRITE 
+GO
